@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
         mySwipeRefreshLayout = findViewById(R.id.refresh);
-        mySwipeRefreshLayout.setRefreshing(true);
+//        mySwipeRefreshLayout.setRefreshing(true);
         fetchData();
         mySwipeRefreshLayout.setOnRefreshListener(
                 new SwipeRefreshLayout.OnRefreshListener() {
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
             void dataProcess(String result) {
                 ListView listView = (ListView) findViewById(R.id.list);
                 try {
-                    js = new JSONArray(result);
+                        js = new JSONArray(result);
 
                 }catch (JSONException e){
                     e.printStackTrace();
