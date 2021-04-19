@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -26,46 +25,5 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-<!--    <LinearLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="70dp"-->
-<!--        android:orientation="horizontal"-->
-<!--        android:background="@color/colorPrimary">-->
 
-<!--        <ImageButton-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:layout_weight="1"-->
-<!--            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"-->
-<!--            android:src="@drawable/home_icon"-->
-<!--            ></ImageButton>-->
-<!--        <ImageButton-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:layout_weight="1"-->
-<!--            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"-->
-<!--            android:src="@drawable/add_friend_icon"-->
-<!--            ></ImageButton>-->
-
-<!--        <ImageButton-->
-<!--            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:layout_weight="1"-->
-<!--            android:src="@drawable/notifications_icon"></ImageButton>-->
-<!--        <ImageButton-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:layout_weight="1"-->
-<!--            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"-->
-<!--            android:src="@drawable/profile_icon"-->
-<!--            ></ImageButton>-->
-
-
-<!--    </LinearLayout>-->
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/mainScreen"
-        android:layout_marginTop="10dp"></FrameLayout>
 </LinearLayout>

@@ -25,7 +25,7 @@
         >
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/loginButton"
+            android:id="@+id/topButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Login"
@@ -36,7 +36,7 @@
             android:orientation="horizontal"
             android:gravity="center"
             android:id="@+id/divider"
-            android:layout_below="@+id/loginButton">
+            android:layout_below="@+id/topButton">
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="1dp"
@@ -55,7 +55,7 @@
         </LinearLayout>
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/signUpButton"
+            android:id="@+id/bottomButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Sign Up"
