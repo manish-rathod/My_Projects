@@ -63,7 +63,7 @@ public class PostService {
                 try {
                     for (int i=0; i<response.length(); i++)
                     Log.d("response", "onSuccess: "+response.get(i));
-                    Double currency = (Double) response.get(0);
+//                    Double currency = (Double) response.get(0);
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }

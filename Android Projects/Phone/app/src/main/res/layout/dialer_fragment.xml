@@ -5,6 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:weightSum="100"
     >
 
 
@@ -23,6 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="@color/colorPrimary"
+
         >
 
         <LinearLayout
@@ -41,6 +43,7 @@
                     android:layout_height="50dp"
                     android:paddingHorizontal="15dp"
                     android:backgroundTint="@color/colorWhite"
+                    android:layout_marginVertical="10dp"
                     android:src="@drawable/add_contact"
                     android:layout_alignParentLeft="true"
                     >
@@ -48,7 +51,7 @@
                 <EditText
                     android:id="@+id/call_number"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="70dp"
                     android:textSize="35dp"
                     android:textAlignment="center"
                     android:textColor="@color/colorWhite"
@@ -61,6 +64,7 @@
                     android:layout_height="50dp"
                     android:paddingHorizontal="15dp"
                     android:backgroundTint="@color/colorWhite"
+                    android:layout_marginVertical="10dp"
                     android:src="@drawable/clear"
                     android:layout_alignParentRight="true"
                     >
