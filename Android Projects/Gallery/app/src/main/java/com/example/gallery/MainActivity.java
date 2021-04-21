@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ImageAdapter adapter = new ImageAdapter(this);
+//        ImageAdapter adapter = new ImageAdapter(this);
 
         gridView  = (GridView) findViewById(R.id.galleryGridView);
         gridView.setAdapter(new ImageAdapter(this));
