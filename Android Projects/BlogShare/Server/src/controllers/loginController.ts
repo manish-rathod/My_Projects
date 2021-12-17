@@ -4,7 +4,7 @@ import { createHash } from "../utility/password_utility";
 import jwt from "jsonwebtoken";
 import { LoginRequest, LoginResponse } from "../models/login_model";
 
-@Path("/login")
+@Path("/user/login")
 export class LoginController {
   @POST
   async loginUser(body: LoginRequest) {
@@ -14,11 +14,12 @@ export class LoginController {
     });
 
     if (user) {
-      const token = jwt.sign({ _id: user._id }, process.env.SECRET_KEY, {
+      const token = jwt.sign({ userId: user._id }, process.env.SECRET_KEY, {
         expiresIn: 86400,
       });
       console.log("token " + token);
       var res: LoginResponse = {
+        _id: user._id,
         userId: user.userId,
         userName: user.userName,
         token: token,

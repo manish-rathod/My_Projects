@@ -1,4 +1,5 @@
 export class LoginResponse {
+  _id: string;
   userName: string;
   userId: string;
   token: string;
