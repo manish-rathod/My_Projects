@@ -28,7 +28,9 @@ export class LikesController {
           upsert: true,
           new: true,
         }
-      );
+      ).lean();
+
+      res.likedByMe = false;
     } else {
       res = await Likes_Model.findOneAndUpdate(
         {
@@ -42,7 +44,8 @@ export class LikesController {
           upsert: true,
           new: true,
         }
-      );
+      ).lean();
+      res.likedByMe = true;
     }
 
     console.log("res " + res);
