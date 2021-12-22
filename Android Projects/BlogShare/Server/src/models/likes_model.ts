@@ -5,6 +5,7 @@ export interface Likes {
   postId: string;
   likedByUsers: string[];
   likes: number;
+  likedByMe?: boolean;
 }
 
 const schema = new Schema<Likes>({
