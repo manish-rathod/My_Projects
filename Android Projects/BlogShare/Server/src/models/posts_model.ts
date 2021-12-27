@@ -9,6 +9,7 @@ export interface Posts {
   createdAt?: Date;
   likes?: number;
   likedByMe: boolean;
+  imageId?: string;
 }
 
 const schema = new Schema<Posts>(
@@ -32,6 +33,9 @@ const schema = new Schema<Posts>(
     likes: {
       type: Number,
       required: true,
+    },
+    imageId: {
+      type: String,
     },
   },
   { timestamps: true }

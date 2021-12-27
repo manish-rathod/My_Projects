@@ -1,3 +1,4 @@
+import { ImageController } from "./image_controller";
 import { LikesController } from "./likes_controller";
 import { LoginController } from "./loginController";
 import { PostsController } from "./posts_controller";
@@ -8,4 +9,5 @@ export default [
   UserController,
   PostsController,
   LikesController,
+  ImageController,
 ];
